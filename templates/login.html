@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<!-- Add CSS styles for the navigation bar -->
+	<style>
+		nav {
+			background-color: #333;
+			overflow: hidden;
+			height: 60px;
+		}
+		
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+			height: 100%;
+		}
+		nav li {
+			margin-right: 10px;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 18px;
+			transition: all 0.2s ease;
+			padding: 0 10px;
+			line-height: 60px;
+		}
+		nav a:hover {
+			color: #f8f8f8;
+		}
+	</style>
+</head>
+<body>
+	<!-- Add the navigation bar -->
+	<nav>
+		<a href="/">Home</a>
+		<a href="/Aboutus" class="active">Blog</a>
+		<a href="/login" class="active">Login</a>
+	</nav>
+	<h1>Login</h1>
+	<!-- Add the login form -->
+	<form action="#" method="POST">
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" required><br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required><br>
+		<input type="submit" value="Login">
+	</form>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f4f4f4;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0,0,0,0.1);
+			border-radius: 5px;
+		}
+		h1 {
+			font-size: 32px;
+			font-weight: bold;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+				form {
+			max-width: 500px;
+			margin: 0 auto;
+		}
+		form label {
+			display: block;
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+		form input,
+		form select {
+			width: 100%;
+			font-size: 16px;
+			padding: 10px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		form input[type="submit"] {
+			background-color: #007bff;
+			color: #fff;
+			cursor: pointer;
+			transition: all 0.2s ease;
+		}
+		form input[type="submit"]:hover {
+			background-color: #0069d9;
+		}
+		p {
+			font-size: 16px;
+			text-align: center;
+			margin-top: 20px;
+		}
+		a {
+			color: #007bff;
+			text-decoration: none;
+			transition: all 0.2s ease;
+		}
+		a:hover {
+			color: #0056b3;
+		}
+		nav {
+			background-color: #333;
+			overflow: hidden;
+			height: 60px;
+		}
+		
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+			height: 100%;
+		}
+		nav li {
+			margin-right: 10px;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 18px;
+			transition: all 0.2s ease;
+			padding: 0 10px;
+			line-height: 60px;
+		}
+		nav a:hover {
+			color: #f8f8f8;
+		}
+	</style>
+</head>
+
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/Aboutus">Blog</a></li>
+			<li><a href="/login">Login</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<h1>Welcome to the CVD Detection App</h1>
+		<form action="/predict" method="POST">
+			<label for="age">Age:</label>
+			<input type="text" name="age" id="age">
+
+			<label for="gender">Gender:</label>
+			<select name="gender" id="gender">
+				<option value="1">Male</option>
+				<option value="0">Female</option>
+			</select>
+
+			<label for="height">Height (cm):</label>
+			<input type="text" name="height" id="height">
+
+			<label for="weight">Weight (kg):</label>
+			<input type="text" name="weight" id="weight">
+
+			<label for="systolic_bp">Systolic Blood Pressure (mmHg):</label>
+			<input type="text" name="systolic_bp" id="systolic_bp">
+
+
+		<label for="diastolic_bp">Diastolic Blood Pressure (mmHg):</label>
+		<input type="text" name="diastolic_bp" id="diastolic_bp"><br>
+
+		<label for="cholesterol">Cholesterol (mmol/L):</label>
+		<input type="text" name="cholesterol" id="cholesterol"><br>
+
+		<label for="glucose">Glucose (mmol/L):</label>
+		<input type="text" name="glucose" id="glucose"><br>
+
+		<label for="smoke">Do you smoke?</label>
+		<select name="smoke" id="smoke">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</select><br>
+
+		<label for="alcoholic">Do you consume alcohol?</label>
+		<select name="alcoholic" id="alcoholic">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</select><br>
+
+		<label for="active">Are you physically active?</label>
+		<select name="active" id="active">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</select><br>
+
+		<input type="submit" value="Submit">
+	</form>
+	</div>
+</body>
+</html>
