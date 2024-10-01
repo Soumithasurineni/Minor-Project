@@ -1,0 +1,1 @@
+This project aims to predict the likelihood of cardiovascular diseases (CVD) in patients using machine learning techniques. The primary objective is to develop a predictive model based on patient data that can help healthcare professionals assess the risk of heart diseases and take preventive measures.
